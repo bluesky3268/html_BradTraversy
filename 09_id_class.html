@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, span, id and class</title>
+    <style>
+        .card{
+            border : 1px solid #ccc;
+            background : #f4f4f4;
+            padding : 20px;
+            margin-bottom : 10px;
+        }
+        .enhance{
+            color : yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--id는 중복해서 사용할 수 없다
+        class는 중복해서 사용가능함.-->
+    <div id = "main-header">
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id = "main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class = "card">
+        <h3>About</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet voluptatem ratione consectetur nulla aliquid perspiciatis corrupti quidem rem repellendus, doloribus voluptatum perferendis, reiciendis autem, reprehenderit ab adipisci.
+             <span class = "enhance">Magnam obcaecati tempore accusantium ipsum veritatis adipisci</span> blanditiis aperiam totam inventore earum est impedit eligendi, consequatur quod vero placeat incidunt soluta velit.</p>
+    </div>
+    <!--div는 박스형태 -> 가로폭을 전부 차지함.
+        span : 태그된 영역만 차지함.ㅇ-->
+    <div id="contact" class = "card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address : 50 Main st, Boston MA</li>
+            <li>Phone : (123) 123-1234</li>
+            <li>Email : me@somethingcool.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2021</p>
+    </div>
+</body>
+</html>
